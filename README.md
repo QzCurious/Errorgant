@@ -9,6 +9,13 @@ try catch can get messy quickly, Errorgant is a simple, type-safe way to handle 
 - 📦 Optionally include context data with type infer-ed
 - 🛡️ Run any throwable function and handle errors inline
 
+## Briefly
+
+- `errorgant` is simpler to create then Error class and it support discriminate key, inferred context
+- `errorgantly` run with an arrow function, it catches the error and return an `Errorgant` object with the error attached to ctx for you to handle it inline.
+- `isErrorgant` is a powerful type guard, it not only narrowing down a variable to `Errorgant` type, but also can "filter" `Errorgant` by discriminate key so you handle a specific error once at a time.
+- (Experimental) `errorgantify`, turns a throwable function not throw, returning an `Errorgant` object with the error attached to ctx. And "it knows generic function", function being `errorgantify` won't lose its generic behavior.
+
 ## Installation
 
 ```bash
