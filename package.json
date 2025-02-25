@@ -1,6 +1,6 @@
 {
   "name": "errorgant",
-  "version": "0.1.9",
+  "version": "0.1.11",
   "description": "try catch can get messy quickly, Errorgant is a simple type-safe way to handle errors inline.",
   "type": "module",
   "files": [
@@ -10,8 +10,14 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "default": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     }
   },
   "scripts": {
